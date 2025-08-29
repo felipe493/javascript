@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <h1>Qual o seu pais</h1>
+    <input type="text" name="txpais" id="txpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var pais = window.document.querySelector("input#txpais")
+            var res = window.document.querySelector("div#res")
+            if (pais.value.toLowerCase() == "brasil") {
+                res.innerHTML = "Você é Brasileiro"
+            } else {
+                res.innerHTML = "Você é Estrangeiro";
+            }
+        }
+    </script>
+</body>
+</html>
